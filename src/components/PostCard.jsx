@@ -10,21 +10,22 @@ const PostCard = ({ $id, title, featuredImage, content }) => {
 
     return (
         <Link to={`/post/${$id}`} className="block">
-            <div className="md:w-[300px] w-[350px] md:h-[350px] h-[350px] bg-gray-100 rounded-xl p-4 overflow-hidden flex flex-col">
+            <div className="md:w-[20vw] w-[80vw] md:h-[50vh] h-[45vh] bg-gray-100 rounded-xl p-4 overflow-hidden flex flex-col shadow-lg transition-transform duration-300 hover:scale-105">
+                
                 {/* Image Container */}
-                <div className="flex-shrink-0 mb-4">
+                <div className="h-[40%] w-full flex-shrink-0">
                     <img
                         src={imageUrl}
                         alt={title}
-                        className="w-full h-[160px] object-cover rounded-xl"
+                        className="w-full h-full object-cover rounded-xl"
                     />
                 </div>
 
                 {/* Title */}
-                <h2 className="text-xl font-bold mb-3 truncate">{title}</h2>
+                <h2 className="text-lg font-semibold mt-3 truncate">{title}</h2>
 
                 {/* Content */}
-                <div className="flex-grow overflow-hidden text-gray-700 line-clamp-3">
+                <div className="text-gray-700 text-sm overflow-hidden line-clamp-3 mt-2">
                     {parse(content)}
                 </div>
             </div>

@@ -70,7 +70,7 @@ const Login = () => {
             transition={{
                 delay:0.1
             }}
-             className="mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10">
+             className="mx-auto w-full max-w-lg bg-gray-100 rounded-xl py-6 px-5 md:p-10 md:px-10 border border-black/10">
                  <div className="mb-2 flex justify-center">
                      <span className="flex justify-center w-full max-w-[100px]">
                          <Logo width="60%" />
