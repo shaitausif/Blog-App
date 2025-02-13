@@ -66,7 +66,7 @@ function Footer() {
         <div className="mt-10 flex flex-col items-center border-t border-gray-600 pt-6">
           <Logo width="100px" />
           <p className="text-sm text-gray-300 mt-3">&copy; 2025. All Rights Reserved by Blog.</p>
-          <p className="text-sm text-gray-300 mt-3">Developed with ❤️ by Tausif Shaikh</p>
+          <p className="text-sm text-gray-300 mt-3">Developed with ❤️ by Abdurrab</p>
         </div>
       </div>
     </section>
