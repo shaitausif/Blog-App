@@ -2,12 +2,14 @@
 import conf from "../conf/conf.js"
 import { Client, Account, ID } from "appwrite";
 import store from "../store/store.js";
-import { setAuthError } from "../store/authSlice.js";
+import { setAuthError, incrementCount } from "../store/authSlice.js";
+
 
 
 export class AuthService{
     client = new Client()
     account;
+    
 
     
 
@@ -25,10 +27,13 @@ export class AuthService{
         try{
             const userAccount = await this.account.create(ID.unique(), email, password,name)
             if(userAccount){
+                store.dispatch(incrementCount())
                 return this.login({email, password})
-            }else{
+                
+            }else{  
                 return userAccount
             }
+            
         }catch(err){
             console.log('Appwrite service :: createAccount ::',err);
             store.dispatch(setAuthError(err.message))

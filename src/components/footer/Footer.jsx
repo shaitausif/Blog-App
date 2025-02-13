@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../Logo";
+import { useSelector } from "react-redux";
 
 function Footer() {
+  const totalUsers = useSelector((state) => state.auth.userCount)
   return (
     <section className="relative overflow-hidden py-10 bg-gray-700 border-t-2 border-t-gray-600">
       <div className="relative z-10 mx-auto max-w-7xl px-4">
@@ -67,6 +69,7 @@ function Footer() {
           <Logo width="100px" />
           <p className="text-sm text-gray-300 mt-3">&copy; 2025. All Rights Reserved by Blog.</p>
           <p className="text-sm text-gray-300 mt-3">Developed with ❤️ by Abdurrab</p>
+          <p className="text-sm text-gray-300 mt-3">Total users created: {totalUsers}</p>
         </div>
       </div>
     </section>
