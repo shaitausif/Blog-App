@@ -29,7 +29,7 @@ const EditPost = () => {
 
   return (
     <>
-      <div className={` py-6`}>
+      <div className={`py-6`}>
         <Container>
           <PostForm  post={post} />
         </Container>

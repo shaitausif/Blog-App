@@ -65,8 +65,8 @@ function Footer() {
         {/* Logo & Copyright - Placed at Bottom */}
         <div className="mt-10 flex flex-col items-center border-t border-gray-600 pt-6">
           <Logo width="100px" />
-          <p className="text-sm text-gray-300 mt-3">&copy; 2023. All Rights Reserved by DevUI.</p>
-          <p className="text-sm text-gray-300 mt-3">Developed with ❤️ by Abdurrab </p>
+          <p className="text-sm text-gray-300 mt-3">&copy; 2025. All Rights Reserved by Blog.</p>
+          <p className="text-sm text-gray-300 mt-3">Developed with ❤️ by Tausif Shaikh</p>
         </div>
       </div>
     </section>
