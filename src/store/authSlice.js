@@ -6,7 +6,7 @@ const initialState = {
     authError: null,
     serviceError: null,
     loading: false,
-    userCount: 0,
+    userCount: 3,
 };
 
 const authSlice = createSlice({
