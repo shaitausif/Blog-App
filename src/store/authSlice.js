@@ -6,7 +6,7 @@ const initialState = {
     authError: null,
     serviceError: null,
     loading: false,
-    userCount: 3,
+    userCount: 5
 };
 
 const authSlice = createSlice({
@@ -44,5 +44,5 @@ const authSlice = createSlice({
     }
 });
 
-export const { login, logout, setAuthError, clearAuthError, setServiceError, clearServiceError, Loading, incrementCount  } = authSlice.actions;
+export const { login, logout, setAuthError, clearAuthError, setServiceError, clearServiceError, Loading , incrementCount } = authSlice.actions;
 export default authSlice.reducer;
