@@ -68,7 +68,7 @@ function Footer() {
         <div className="mt-10 flex flex-col items-center border-t border-gray-600 pt-6">
           <Logo width="100px" />
           <p className="text-sm text-gray-300 mt-3">&copy; 2025. All Rights Reserved by Blog.</p>
-          <p className="text-sm text-gray-300 mt-3">Developed with ❤️ by Abdurrab</p>
+          <p className="text-sm text-gray-300 mt-3">Developed with patience by <a href='https://portfolio-ebon-five-51.vercel.app/' className='underline hover:text-blue-500'>Tausif Shaikh</a></p>
           <p className="text-sm text-gray-300 mt-3">Total users created: {totalUsers}</p>
         </div>
       </div>
